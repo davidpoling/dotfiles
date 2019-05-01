@@ -19,36 +19,33 @@ set backspace=indent,eol,start
 set ignorecase
 set smartcase
 
+" Sets cursorline and ensures it's only showing in the active pane
+set cursorline
+autocmd InsertLeave,WinEnter * set cursorline
+autocmd InsertEnter,WinLeave * set nocursorline
+
+" Change cursor shape in different modes
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[4 q" "SR = REPLACE mode
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+
+" hops over visual lines (real vs long lines)
+nmap j gj
+nmap k gk
+
+" Don't lose selection when shifting sidewards
+xnoremap <  <gv
+xnoremap >  >gv
+
 " Fuzzy Finder
+map <C-t> :FZF<CR>
 set rtp+=/usr/local/opt/fzf
 
-" Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-
-" TODO: Pick a leader key
 let mapleader = ","
 map <leader>h :sp<cr> " clear search
 map <leader>v :vs<cr> " clear search
 map <leader>x :q<cr>
 map <leader><space> :let @/=''<cr> " clear search
-
-" TERN PLUGIN config
-"let tern#is_show_argument_hints_enabled = "on_move"
-"let tern_show_signature_in_pum=1
-"let tern_show_argument_hints="on_hold"
-"set updatetime=1000
-"set noshowmode " requested for tern_show_argument_hints
-"cabbrev h vert h
-
-" ternjs stuf
-":nmap <Leader>td :TernDoc<cr>
-":autocmd CompleteDone * pclose
-
-" Vundle plugins
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-call vundle#end()
-filetype plugin indent on
 
 " Plugged plugins
 call plug#begin('~/.vim/plugged')
@@ -60,7 +57,6 @@ Plug 'leshill/vim-json'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'flazz/vim-colorschemes'
 Plug 'Valloric/YouCompleteMe'
-"Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'scrooloose/nerdtree'                                                                                  
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }                                           
 Plug 'junegunn/fzf.vim'
@@ -70,7 +66,6 @@ call plug#end()
 map <C-h> :NERDTreeToggle<CR>
 
 let g:fzf_command_prefix = ''
-
 let g:javascript_plugin_jsdoc = 1
 let g:syntastic_html_checkers = ['eslint']
 let g:syntastic_javascript_checkers = ['eslint']
@@ -93,3 +88,4 @@ augroup END
     :let mapleader = " "
     :nmap <Leader><Leader> :w<Enter>
     :nmap <Leader>sw "zyiw:Ag z
+
