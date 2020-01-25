@@ -1,0 +1,63 @@
+{
+  "gitlens.annotations.file.gutter.hover.details": true,
+  "gitlens.annotations.file.hover.wholeLine": false,
+  "gitlens.blame.file.lineHighlight.enabled": false,
+  "gitlens.blame.line.enabled": true,
+  "search.exclude": {
+    "**/node_modules": false,
+    "**/bower_components": false
+  },
+  "workbench.editor.enablePreview": false,
+  "window.zoomLevel": 0,
+  "powermode.enabled": false,
+  "powermode.enableShake": false,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "workbench.panel.location": "bottom",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.annotations.details": true,
+  "gitlens.hovers.annotations.enabled": true,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.keymap": "none",
+  "search.location": "sidebar",
+  "editor.scrollBeyondLastLine": false,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "git.autofetch": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "material-icon-theme.activeIconPack": "react",
+  "files.watcherExclude": {
+    "**/node_modules": false,
+    "node_modules": false
+  },
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vs-kubernetes": {
+    "vs-kubernetes.helm-path": "/Users/davidpoling/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.draft-path": "/Users/davidpoling/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+  },
+  "breadcrumbs.enabled": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsicons.dontShowNewVersionMessage": true,
+  "java.saveActions.organizeImports": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "todo-tree.highlights.enabled": true,
+  "workbench.colorTheme": "Dracula At Night"
+}
