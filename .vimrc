@@ -1,7 +1,8 @@
 " Syntax and color scheme
+packadd! dracula
 syntax enable
 set background=dark
-colorscheme Monokai
+colorscheme monokai
 
 " Editing set hlsearch
 set expandtab
@@ -56,11 +57,11 @@ Plug 'othree/html5.vim'
 Plug 'leshill/vim-json'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'flazz/vim-colorschemes'
-Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'                                                                                  
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }                                           
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 map <C-h> :NERDTreeToggle<CR>
