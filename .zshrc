@@ -61,6 +61,12 @@ alias vimrc='vim ~/.vimrc'
 #vim fzf
 alias vimf='vim $(fzf)'
 
+#neovim init.lua
+alias nviminit='nvim ~/.config/nvim/init.lua'
+
+#neovim fzf
+alias nvimf='nvim $(fzf)'
+
 #source profile
 alias srcbash='source ~/.bash_profile'
 alias srczsh='source ~/.zshrc'
