@@ -51,9 +51,9 @@ alias kafka='docker run -p 2181:2181 -p 9092:9092 -e ADVERTISED_HOST=localhost j
 alias startmysql='sudo services mysql start'
 
 #profile
-alias bashp='vim ~/.bash_profile'
-alias bashrc='vim ~/.bashrc'
-alias zsh='vim ~/.zshrc'
+alias bashp='nvim ~/.bash_profile'
+alias bashrc='nvim ~/.bashrc'
+alias zsh='nvim ~/.zshrc'
 
 #vim rc
 alias vimrc='vim ~/.vimrc'
@@ -63,6 +63,9 @@ alias vimf='vim $(fzf)'
 
 #neovim init.lua
 alias nviminit='nvim ~/.config/nvim/init.lua'
+
+#neovim config
+alias nvimconf='cd ~/.config/nvim/'
 
 #neovim fzf
 alias nvimf='nvim $(fzf)'
