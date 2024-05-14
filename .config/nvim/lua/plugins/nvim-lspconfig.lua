@@ -133,7 +133,7 @@ return {
 					cssls = {},
 					html = {},
 					eslint = {},
-					omnisharp = {},
+					csharp_ls = {},
 				},
 			}
 
@@ -163,7 +163,7 @@ return {
 					"cssls",
 					"html",
 					"eslint",
-					"omnisharp",
+					"csharp_ls",
 				},
 				handlers = {
 					function(server_name)
