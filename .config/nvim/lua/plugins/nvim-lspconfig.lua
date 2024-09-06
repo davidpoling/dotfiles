@@ -167,6 +167,7 @@ return {
 				},
 				handlers = {
 					function(server_name)
+						server_name = server_name == "tsserver" and "ts_ls" or server_name
 						local server = servers[server_name] or {}
 						-- This handles overriding only values explicitly passed
 						-- by the server configuration above. Useful when disabling
